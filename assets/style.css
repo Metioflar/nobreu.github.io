@@ -304,17 +304,17 @@ h5 {
     font-family: var(--title-font-family);
 }
 
-.pedestal {
+.card-sobre {
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     width: 230px;
-    height: 560px !important;
+    height: 260px !important;
     transform: translateY(140px);
 }
 
-.pedestal:hover {
+.card-sobre:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,10 +335,11 @@ h5 {
 .cont-cards {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 /* ---------CARDS-SOBRE-------- */
-.items-sobre {
+.container-sobre {
     display: flex;
     transition: transform 0.3s ease;
     flex-direction: row;
@@ -346,47 +347,38 @@ h5 {
     gap: 10px !important;
 }
 
-.box-sobre {
+.box-sobre:hover {
     margin: 0 !important;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     transition: all .45s ease;
     width: 220px;
-    height: 220px;
-    align-items: center;
+    height: 260px;
+    align-items: left;
     text-align: center;
-    justify-content: center;
-    gap: 15px;
+    gap: 10px;
     background: var(--main-color-gradient);
 }
 
-.box-sobre:hover {
+.box-sobre {
     display: flex;
     flex-wrap: wrap;
     transition: all .45s ease;
     width: 220px;
     height: 230px;
+    padding: 20px;
     /* transform: translateY(-30px); */
     align-items: start;
     text-align: center;
-    justify-content: center;
+
     gap: 10px;
     background: var(--main-color-gradient);
 }
-.box-sobre:hover .items-desc {
-    /* padding: 14px; */
-    opacity: 1;
-    transition: opacity 1.5s ease;
-    height: 200px;
-    /* transform: translateY(-20px); */
-}
+
 .box-sobre:hover .items-titulo {
     font-size: 15px;
     transition: opacity 0.3s ease-in-out;
-}
-.box-sobre:hover .leia-mais {
-    display: none;
 }
 .items-titulo {
     font-size: 15px;
@@ -402,17 +394,9 @@ h5 {
 
 .items-desc {
     /* Defina a opacidade inicial como 0 para tornar o texto invisível */
-    opacity: 0;
     text-align: left;
     color: #fff;
     font-size: 12px;
-}
-
-.leia-mais {
-    display: block;
-    font-size: 40px;
-    text-align: center;
-    transform: translateY(-20px);
 }
 
 /*--------------- SERVIÇOS ------------------*/
@@ -1559,11 +1543,12 @@ h5 {
     }
     
     .cont-cards {
-        display: grid;
+        /* display: grid;
         width: 100%;
-        flex-wrap: wrap;
-        gap: 50px;
+        /* flex-wrap: wrap; */
+        /* gap: 10px!important;
         align-items: end;
+        align-content: space-between; */
     }
     
     /* ---------CARDS-SOBRE-------- */
